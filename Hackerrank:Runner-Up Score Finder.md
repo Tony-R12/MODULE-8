@@ -19,9 +19,31 @@ To write a Python program that takes a list of scores from participants and find
 ---
 
 ## 💻 PROGRAM:
-
-ADD CODE HERE
+```
+l1=[]
+l2=[]
+for _ in range(int(input())):
+ name = input()
+ score = float(input())
+ l1.extend([name,score])
+ l2.append(l1)
+ l1=[]
+l3=[]
+l4=[]
+for i in l2:
+ l3.append(i[1])
+l3.sort()
+for i in l2:
+ if i[1]==l3[1]:
+ l4.append(i[0])
+l4.sort()
+for i in l4:
+ print(i)
+```
 
 ## OUTPUT
+<img width="458" height="466" alt="image" src="https://github.com/user-attachments/assets/7e5e20b5-3aad-4f46-b59f-7ac86c590a4f" />
+
 
 ## RESULT
+Thus,the program is successfully created.
