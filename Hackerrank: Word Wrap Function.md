@@ -27,14 +27,21 @@ To write a Python function that takes a long string and a specified width, and r
 
 ## 🧪 Program
 ```
-m1,m2,m3=int(input()),int(input()),int(input())
-total=m1+m2+m3;
-percentage=(total/300)*100
-print("Total marks obtained is {} and the percentage obtained is {}".format(total,percentage))
+def wrap(string, max_width):
+    wrapped_lines = []
+    for i in range(0, len(string), max_width):
+        wrapped_lines.append(string[i:i+max_width])
+    return '\n'.join(wrapped_lines)
+
+# Example usage
+text = input("Enter a long string: ")
+width = int(input("Enter max width: "))
+print("\nWrapped Text:\n")
+print(wrap(text, width))
 ```
 
 ## Sample Output
-<img width="1156" height="177" alt="image" src="https://github.com/user-attachments/assets/9fadcf6b-f2d8-40bf-933e-600c65e6fba3" />
+<img width="738" height="400" alt="image" src="https://github.com/user-attachments/assets/945675a9-fa89-44d7-84e5-6effe3d3960d" />
 
 
 ## Result
