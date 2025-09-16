@@ -35,11 +35,17 @@ percentage=(total/300)*100
 print("Total marks obtained is {} and the percentage obtained is {}".format(total,percentage))
 ```
 
+
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/a0adc93e-1cd6-4f7b-b34b-7cc40a6e4f98)
+<img width="1156" height="177" alt="image" src="https://github.com/user-attachments/assets/006204df-6de3-4a72-9eeb-c889104b0bed" />
+
+
 
 ## RESULT
-Program is verified.
+Thus,the program is successfully created.
+
+
+
 
 
 # 🔄 Hackerrank : # 📦 Python Word Wrap Function
@@ -85,10 +91,15 @@ print(wrap(text, width))
 ```
 
 ## Sample Output
-![image](https://github.com/user-attachments/assets/a68af476-8acc-4947-8a97-a797dcb9c1b7)
+<img width="738" height="400" alt="image" src="https://github.com/user-attachments/assets/945675a9-fa89-44d7-84e5-6effe3d3960d" />
+
 
 ## Result
-Program is verified successfully.
+Thus,the program is successfully created.
+
+
+
+
 
 
 # 🎓 Hackerrank:Python Program to Find Students with the Second Lowest Grade
@@ -141,11 +152,17 @@ for i in l4:
   print(i)
 ```
 
+
 ## Output
-![image](https://github.com/user-attachments/assets/9449f4da-1beb-4561-a55b-e6abb641834a)
+<img width="394" height="403" alt="image" src="https://github.com/user-attachments/assets/b27639ca-d566-499c-a3ec-d512b103b9a2" />
+
 
 ## Result
-Thus the program has been successfully executed
+Thus,the program is successfully created.
+
+
+
+
 
 
 
@@ -193,9 +210,57 @@ for i in l4:
 ```
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/3f47ed38-3d0a-4930-938f-56170dadbcb9)
+<img width="458" height="466" alt="image" src="https://github.com/user-attachments/assets/7e5e20b5-3aad-4f46-b59f-7ac86c590a4f" />
+
 
 ## RESULT
-Thus the program has been successfully executed
+Thus,the program is successfully created.
 
 
+
+
+
+# 🔍 Hackerrank:Python Program to Check if a String Ends with a Numeric Digit
+
+This Python program checks whether the last character of a given input string is a **numeric digit (0–9)**.
+
+---
+
+## 🎯 Aim
+
+To write a Python program that checks if a given string ends with a number using Python's built-in string methods.
+
+---
+
+## 🧠 Algorithm
+
+1. **Start the program.**
+2. **Input** a string from the user.
+3. **Access** the last character using indexing (`string[-1]`).
+4. **Check** if the last character is a digit using the `.isdigit()` method.
+5. **If true**, print that the string ends with a number.
+6. **Else**, print that the string does not end with a number.
+7. **End the program.**
+
+---
+
+## 💻  Program
+```
+import re
+
+s = input()
+p = '[a-zA-Z0-9]*[0-9]+'
+x = re.match(p, s)
+
+if x:
+    print("True")
+else:
+    print("False")
+```
+
+## Output
+<img width="441" height="204" alt="image" src="https://github.com/user-attachments/assets/52b0c7e1-6887-4518-8874-febde44058e7" />
+
+
+## Result
+Thus,the program is successfully created.
